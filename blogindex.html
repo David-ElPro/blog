@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Linntae</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="cssblog.css">
+  <link rel="stylesheet" href="orginalstyles.css">
+  <link rel="stylesheet" href="darkmodestyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="scriptgeneral.js"></script>
+  <script src="darkmodeoriginal4.js"></script>
+  
+</head>
+<body>
+  <header class="blog-header">
+    <nav>
+        <div class="logo"><img id="logoimagen" src= "" alt="logodinamico"></div>
+        <ul class="nav-links">
+            <li><a href="#hero-content"><i class="fa-solid fa-house"></i>   INICIO</a></li>
+            <li><a href="#footer"><i class="fa-solid fa-phone"></i>   CONTÁCTANOS</a></li>
+            <li><a href="#plans"><i class="fa-solid fa-paper-plane"></i>   PLANES</a></li>
+            <li><a href="#carouselproducts"><i class="fa-solid fa-mobile"></i>   PRODUCTOS</a></li>
+            <li><a href="#downloadButton"><i class="fa-solid fa-download"></i>   DESCARGA LA APP</a></li>
+            <li><a href="#about"><i class="fa-solid fa-handshake"></i>   QUIÉNES SOMOS</a></li>
+            <li><a href="https://linntae.mx/#/" id="acceso-clientes-navbar">ACCESO A CLIENTES <i class="fa-duotone fa-solid fa-user"></i></a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+     <!-- Dark Mode Button -->
+     <button id="darkModeToggle" data-emoji="🌙"><span>🌙 Dark Mode</span></button>
+
+    <h1>¡Bienvenido a nuestro Blog!</h1>
+    
+  
+  
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const categoryButtons = document.querySelectorAll(".category-button");
+      const mobileSelect = document.getElementById("category-select");
+      const articles = document.querySelectorAll(".article-card");
+    
+      function filterArticles(category) {
+        articles.forEach(article => {
+          const articleCategory = article.dataset.category.trim().toLowerCase();
+          const match = category === "todo" || articleCategory === category.toLowerCase();
+          article.style.display = match ? "block" : "none";
+        });
+    
+        // Botones visual
+        categoryButtons.forEach(btn => btn.classList.remove("active"));
+        document.querySelector(`.category-button[data-category="${category}"]`)?.classList.add("active");
+    
+        // Mobile select sync
+        if (mobileSelect.value !== category) {
+          mobileSelect.value = category;
+        }
+      }
+    
+      categoryButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const selected = button.dataset.category;
+          filterArticles(selected);
+        });
+      });
+    
+      mobileSelect.addEventListener("change", () => {
+        filterArticles(mobileSelect.value);
+      });
+    
+      // Default
+      filterArticles("todo");
+    });
+    </script>
+    
+    
+  </header>
+  <div class="search-wrapper">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar entradas...">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- BARRA DE CATEGORÍAS DESPUÉS DEL HEADER -->
+  <div class="category-nav-wrapper">
+    <div class="category-nav">
+      <button class="category-btn active" data-category="todo">Todo</button>
+      <button class="category-btn" data-category="curiosidades">Curiosidades</button>
+      <button class="category-btn" data-category="negocio">Para tu negocio</button>
+      <button class="category-btn" data-category="apps">App móviles</button>
+      <button class="category-btn" data-category="companias">Compañías</button>
+    </div>
+
+    <div class="category-nav-mobile">
+      <select id="category-select">
+        <option value="todo" selected>Todo</option>
+        <option value="curiosidades">Curiosidades</option>
+        <option value="negocio">Para tu negocio</option>
+        <option value="apps">App móviles</option>
+        <option value="companias">Compañías</option>
+      </select>
+    </div>
+    
+  </div>
+  
+  
+  
+ 
+  <main class="blog-main">
+    <section id="featured-article" class="featured"></section>
+    <section id="articles-grid" class="articles-grid"></section>
+  </main>
+ 
+  <footer class="blog-footer">
+    <p>© 2024 Linntae - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>
