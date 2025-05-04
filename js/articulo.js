@@ -1,11 +1,10 @@
-
 async function loadArticle() {
   const params = new URLSearchParams(window.location.search);
-  const id = parseInt(params.get('id'), 10);
+  const id = parseInt(params.get("id"), 10);
 
-  const response = await fetch('articles_final.json');
+  const response = await fetch("articles_final.json");
   const articles = await response.json();
-  const article = articles.find(a => a.id === id);
+  const article = articles.find((a) => a.id === id);
 
   if (article) {
     // Actualizar encabezado
@@ -15,49 +14,54 @@ async function loadArticle() {
     document.querySelector(".article-title").textContent = article.title;
     document.querySelector(".article-date").textContent = "Fecha: " + article.date;
 
-    // Actualizar contenido
-    const container = document.getElementById('article-content');
+    // Mostrar contenido completo
+    const container = document.getElementById("article-content");
     container.innerHTML = `
       <section class="article-content">
-        <p>${article.content.replace(/\n/g, '<br>')}</p>
+        ${article.content}
       </section>
-      <a href="blogindex.html" class="back-button">← Volver al Blog</a>
-    `;
+
+       <!-- Simulador de anuncio AdSense -->
+  <div class="adsense-simulated">
+    <p>[Aqui pondría un anuncio.. ¡Si tan solo estuviera en producción!]</p>
+  </div>
+
+
+`;
+      
+    
 
     document.title = article.title + " | Linntae Blog";
 
     // Artículos relacionados
-    const related = articles.filter(a => a.id !== article.id && a.category === article.category).slice(0, 3);
-    const extras = articles.filter(a => a.id !== article.id && a.category !== article.category).slice(0, 3 - related.length);
+    const related = articles.filter(
+      (a) => a.id !== article.id && a.category === article.category
+    ).slice(0, 3);
+
+    const extras = articles.filter(
+      (a) => a.id !== article.id && a.category !== article.category
+    ).slice(0, 3 - related.length);
+
     const allRelated = [...related, ...extras];
 
-    const relatedContainer = document.getElementById("related-articles");
+    const relatedContainer = document.getElementById("related-container");
+    relatedContainer.innerHTML = ""; // Limpiar antes de insertar
 
-    allRelated.forEach(item => {
+    allRelated.forEach((item) => {
       relatedContainer.innerHTML += `
         <div class="related-article-card">
           <img src="${item.image}" alt="${item.title}">
           <div class="related-content">
             <div class="related-category">${item.category}</div>
             <div class="related-title">${item.title}</div>
-            <p>${item.summary}</p>
             <a href="articulo.html?id=${item.id}" class="read-more">Leer más</a>
           </div>
         </div>
       `;
     });
-
   } else {
-    document.getElementById('article-content').innerHTML = "<p>Artículo no encontrado.</p>";
+    document.getElementById("article-content").innerHTML = "<p>Artículo no encontrado.</p>";
   }
 }
 
 document.addEventListener("DOMContentLoaded", loadArticle);
-
-document.querySelectorAll('.category-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    // Aquí puedes añadir lógica para filtrar artículos si lo necesitas
-  });
-});
