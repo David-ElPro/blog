@@ -280,11 +280,11 @@ body {
   }
   
   /* Dropdown general */
-.nav-links .dropdown {
+.dropdown {
   position: relative;
 }
 
-.nav-links .dropdown-content {
+ .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;

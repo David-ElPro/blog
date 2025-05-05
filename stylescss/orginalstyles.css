@@ -100,7 +100,7 @@ nav {
     font-size: 13px;
     color: #1a3669;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    
+
     display: inline-block; /* Needed for transform to work properly */
 }
 
@@ -3299,3 +3299,7 @@ color: #1a3669;
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+
+  

@@ -8,13 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="stylescss/cssblog.css">
   <link rel="stylesheet" href="stylescss/orginalstyles.css">
-  <link rel="stylesheet" href="stylescss/darkmodestyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="scriptgeneral.js"></script>
-  <script src="darkmodeoriginal4.js"></script>
+  
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const dropdownToggle = document.querySelector(".dropdown > a");
@@ -56,8 +54,6 @@
         <div class="menu-toggle">&#9776;</div>
     </nav>
 
-     <!-- Dark Mode Button -->
-     <button id="darkModeToggle" data-emoji="🌙"><span>🌙 Dark Mode</span></button>
 
     <h1>¡Bienvenido a nuestro Blog!</h1>
     
@@ -146,9 +142,52 @@
     <section id="articles-grid" class="articles-grid"></section>
   </main>
  
-  <footer class="blog-footer">
-    <p>© 2024 Linntae - Todos los derechos reservados.</p>
-  </footer>
+ <!-- Footer -->
+ <footer class="unique-footer" id="footer">
+  <div class="unique-footer-container">
+    <ul class="datosFooter">
+      <li>
+        <h5><i class="fas fa-map-marked-alt"></i> Dirección:</h5>
+        <p id="direccion">Morelos Sur 178 Local C-1-3, Cuernavaca Centro, 62000 Cuernavaca, Mor.</p>
+      </li>
+      <li id="info_ventas">
+        <h5><i class="fas fa-phone-volume"></i> Ventas:</h5>
+        <p>
+          <a style="color: white" href="tel:7771088964">777 108 8964</a>
+          / <a style="color: white" href="tel:7773583988">777 358 3988</a>
+        </p>
+      </li>
+      <li id="info_soporte">
+        <h5><i class="fas fa-phone-volume"></i> Soporte:</h5>
+        <p>
+          <a style="color: white" href="tel:7774166926">777 416 6926</a>
+          / <a style="color: white" href="tel:7351037758">735 103 7758</a>
+        </p>
+      </li>
+      <li id="info_contacto" style="display: none;">
+        <h5><i class="fas fa-phone-volume"></i> Contacto:</h5>
+        <p>
+          <a id="info_contacto_tel" style="color: white" href=""></a>
+        </p>
+      </li>
+      <li>
+        <h5><i class="fas fa-envelope"></i> Escríbenos:</h5>
+        <p id="correo">ventas@linntae.mx</p>
+      </li>
+      <li>
+        <h5 id="lblSiguenos"><i class="fas fa-envelope"></i> Síguenos:</h5>
+        <a id="link_fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a id="link_youtube" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a id="link_tiktok" href="#"><i class="fab fa-tiktok"></i></a>
+        <a id="link_instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a id="link_twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="unique-footer-bottom">
+    <p class="unique-footer-text">Líderes en Innovación SA de CV © | <a href="#" class="unique-footer-link">Aviso de Privacidad</a></p>
+  </div>
+</footer>
 
   <script src="../js/articulo.js"></script>
   <script src="../js/index.js"></script>

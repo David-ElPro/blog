@@ -1,0 +1,673 @@
+body.dark-mode{
+    background: linear-gradient(-90deg, #0f1f3c, #234789, #0e1c38);
+    color: #ffffff;
+    
+}
+
+
+.dark-mode .btn-blue {
+    background: #ffffff;
+    color: #1a3669;
+    margin-top: 10px;
+}
+.dark-mode .btn-blue img {
+    content: url("https://storage.googleapis.com/linn-files/LinntaeWebPage/Firstpage/iconsbuttons/downloaddark.png");
+}
+
+
+
+
+
+/*DarkmodeNavMenu*/
+
+
+jgf
+.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+
+.dark-mode .menu-toggle{
+    color: #a64242;
+}
+
+
+/*DarkmodeHerosection*/
+
+.dark-mode .hero h1{
+    color:white;
+}
+
+.dark-mode .hero h1 span{
+    color: #f16200;
+}
+
+
+.dark-mode .subtitle{
+    color: #f16200;
+}
+
+
+.dark-mode .description{
+    color:white;
+
+}
+
+.dark-mode .hero-content h1 {
+    color: #ffffff;
+
+
+}
+
+/* DarkmodeGlobal StylesHowTo */
+
+.dark-mode .steps p strong{
+    color: #ffffff;
+}
+
+.dark-mode .steps p{
+    color: #ffffff;
+}
+
+/* Darkmode RegisterSection */
+
+.dark-mode .services1-background{
+    background-image: url(https://storage.googleapis.com/linn-files/LinntaeWebPage/Formulario/goodone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.dark-mode .register-section{
+    background-image: url(https://storage.googleapis.com/linn-files/LinntaeWebPage/cardsection/darkmodeservicesbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Dark Mode Pasos de validación*/
+.dark-mode .verification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Adjust max width */
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.dark-mode .method-option h2{
+    color: #f16200;
+   
+}
+.dark-mode .method-option strong{
+    color: #1a3669;
+   
+}
+
+
+
+.dark-mode .step h2{
+    color: #f16200
+}
+
+.dark-mode .step p{
+    color: #1a3669;
+}
+/* Darkmode Services Section */
+
+.dark-mode .services-title{
+    color: #ffffff;
+}
+.dark-mode .services-description{
+    color: #ffffff;
+}
+
+/* Darkmode Services-card */
+
+.dark-mode .service-card{
+    background: rgba(241, 97, 1, 0.697);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.dark-mode .service-title{
+    color: #ffffff;
+}
+.dark-mode .service-text {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+/*Darkmode service-payments-container*/
+.dark-mode .service-payments-container{
+    background: linear-gradient(-90deg, #0f1f3c, #234789, #0e1c38);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.dark-mode .services-title {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.dark-mode .services-description {
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+
+.dark-mode .service-payments-subtitle{
+    color: #ffffff;
+}
+
+.dark-mode .service-payments-text{
+    color: #ffffff;
+}
+
+/*Darkmode Virtual-recharges*/
+.dark-mode .virtual-recharges-container{
+    background: #1a3669;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.dark-mode .recharge-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.recharge-card-button:hover {
+    background: #f16200;
+}
+
+.dark-mode .recharge-card-button{
+    background-color: #f16200;
+}
+.dark-mode .recharge-card-button:hover{
+    background-color: rgb(0, 172, 92);
+}
+
+
+/*Darkmode Recharge Devices Section */
+
+
+.dark-mode .recharge-devices-description{
+    color: #ffffff;
+}
+
+.dark-mode .recharge-devices-title{
+    color: #f16200;
+}
+
+/* Recharge Platform Section */
+
+.dark-mode .recharge-platform-container{
+    background: linear-gradient(90deg, #000000, #132341, #020c20);
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+
+/* Darkmode Recharge Sales Section */
+
+.dark-mode .recharge-sales-container{
+    background: linear-gradient(90deg, #000000, #132341, #020c20);
+}
+
+.dark-mode .recharge-sales-subtitle{
+    color: #f16200;
+}
+
+.dark-mode .recharge-sales-description{
+    color: #ffffff;
+}
+
+.dark-mode .recharge-sales-list li {
+    color: #ffffff;
+}
+
+/*Darkmode Carousel2*/
+.dark-mode .carousel-text h2{
+    color: #ffffff;
+}
+
+.dark-mode .carousel-text p{
+    color: #ffffff;
+
+}
+
+
+
+/*Darkmode app-sale*/
+.dark-mode .app-sale-text-box{
+    background: linear-gradient(135deg, #00bf77, #00975e);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode .app-sale-section-container{
+    background: linear-gradient(90deg, #000000, #132341, #020c20);
+}
+
+
+.dark-mode .app-sale-button{
+    background: #f16200;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+/*Darkmode sell-recharges*/
+.dark-mode .sell-recharges-section-container{
+    background: linear-gradient(900deg, #090909, #1a3669);
+}
+
+.dark-mode .sell-recharges-steps-box{
+    background: linear-gradient(135deg,#00bf77, #00975e);
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .sell-recharges-button{
+    background: #f16200;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.dark-mode .sell-recharges-description{
+    color: #ffffff;
+}
+
+.dark-mode .sell-recharges-button:hover{
+    background: #1a3669;
+    transform: scale(1.1);
+}
+
+/*Darkmode FAQ Section */
+
+.dark-mode h2{
+    color: #ffffff;
+}
+
+
+
+
+/* Dark Mode Styles Button */
+
+
+/* Dark Mode Button */
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #1a3669;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 26px;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    transition: background-color 0.6s;
+    z-index: 1000;
+}
+
+.dark-mode #darkModeToggle {
+    background-color: #ebecf0;
+    color: #1a3669;
+}
+
+#darkModeToggle:hover {
+    background-color: #020653;
+    color: #ffffff;
+}
+
+
+.dark-mode #darkmodeToggle{
+    background-color: #f5efeb;
+    color: #f16200;
+}
+
+.dark-mode .darkmodeToggle{
+    background-color: #1a3669;
+    color: #f5efeb;
+}
+
+.dark-mode .circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #e2dedb8a;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+
+/*Darkmode Nav*/
+.dark-mode .nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+   
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block; /* se necesitar para que funcione correctamente */
+}
+
+.dark-mode .nav-links.active{
+   background-color: #234789;
+   color: #ffffff;
+
+}
+
+.dark-mode .nav-links{
+    background-color: #23478900;
+    color: #ffffff;
+ 
+ }
+
+
+.dark-mode .nav-links li {
+    display: inline;
+}
+.dark-mode .nav-links li a:hover {
+    transform: translateY(-5px); /* Moves up slightly */
+    color: #1a3669; /* Change color */
+    animation: bounce 0.5s ease-in-out; /* Add bounce animation */
+    
+}
+
+/* Keyframes for Bounce Effect */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(-5px); }
+}
+
+/* Active Link Effect (Optional) */
+.dark-mode .nav-links li a:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+    background-color: #234789;
+    color: #dbe5f8;
+}
+
+
+
+.dark-mode nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f16200;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+ .dark-mode .menu-toggle {
+    color: #f5efeb;
+    font-size: 30px;
+}
+
+.dark-mode .nav-links{
+   
+    font-weight: 400;
+}
+
+.dark-mode header {
+    background: #f16200;
+}
+
+.dark-mode .logo {
+    font-size: 5px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width:50%; /* Ensures full width */
+}
+
+.dark-mode .logo img {
+    width: 100px;
+    max-width:100%;
+    
+}
+
+/* Dark Mode Waves */
+
+
+.dark-mode .wave1 {
+    background: url('https://storage.googleapis.com/linn-files/LinntaeWebPage/Firstpage/Waves/olafuerteoscuro.png') repeat-x;
+    height: 100px;
+    bottom: 0;
+    animation: waveMove 5s ease-in-out 1;
+}
+
+.dark-mode .wave2 {
+    background: url('https://storage.googleapis.com/linn-files/LinntaeWebPage/Firstpage/Waves/olafuerteoscuro.png') repeat-x;
+    height: 120px;
+    bottom: 0px;
+    opacity: 0.7;
+    animation: waveMove 5s ease-in-out 1;
+}
+
+.dark-mode .wave3 {
+    background: url('https://storage.googleapis.com/linn-files/LinntaeWebPage/Firstpage/Waves/olafuerteoscuro.png') repeat-x;
+    height: 140px;
+    bottom: 0px;
+    opacity: 0.5;
+    animation: waveMove 5s ease-in-out 1;
+}
+
+.dark-mode .wave4 {
+    background: url('https://storage.googleapis.com/linn-files/LinntaeWebPage/Firstpage/Waves/olafuerteoscuro.png') repeat-x;
+    height: 160px;
+    bottom: 0px;
+    opacity: 0.3;
+    animation: waveMove 5s ease-in-out 1;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+
+
+
+
+
+
+.dark-mode .circles1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -9999;
+    pointer-events: none;
+}
+
+.dark-mode .circles1 li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffffc4;
+    animation: animate 15s linear infinite;
+    bottom: -180px;
+    
+}
+
+.dark-mode .circles1 li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.dark-mode .circles1 li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.dark-mode .circles1 li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.dark-mode .circles1 li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.darke-mode .circles1 li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.dark-mode .circles1 li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.dark-mode .circles1 li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.dark-mode .circles1 li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.dark-mode .circles1 li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.dark-mode .circles1 li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.dark-mode .registro-container p{
+    color: #ffffff;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.dark-mode .custom-about-section {
+    padding: 50px 10%;
+    background: linear-gradient(180deg, #10203d, #1a3669, #070d19);
+}
+
+.dark-mode .custom-about-section p{
+    color: #ffffff;
+    
+   
+}
+.dark-mode .custom-plans-section {
+    padding: 50px 10%;
+    background: linear-gradient( #ffffff 50%, #1a3669 30%);
+    background-image: url(https://storage.googleapis.com/linn-files/LinntaeWebPage/Formulario/goodone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}

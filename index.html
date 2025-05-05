@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="socialmediabar.css">
 		<link rel="stylesheet" href="orginalstyles.css">
+		<link rel="stylesheet" href="../stylescss/cssblog.css">
 		<link rel="stylesheet" href="darkmodestyles.css">
 		<link rel="stylesheet" href="squaresfront.css">
 		<link rel="stylesheet" href="animationsquaresthankpage.css">
@@ -50,15 +51,39 @@
 		<noscript><img height="1" width="1" style="display:none"
 					   src="https://www.facebook.com/tr?id=1236436765150405&ev=PageView&noscript=1"
 		/></noscript>
+	
 		<!-- End Meta Pixel Code -->
 	</head>
 	<body>
+		
 		<!-- Header / Navigation -->
 		<header>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+				  const dropdownToggle = document.querySelector(".dropdown > a");
+				  const dropdownContent = document.querySelector(".dropdown-content");
+			  
+				  dropdownToggle.addEventListener("click", function (e) {
+					e.preventDefault(); // Prevenir navegación
+					dropdownContent.classList.toggle("show");
+				  });
+				});
+			  </script>
 			<nav>
 				<div class="logo"><img id="logoimagen" src="" alt="logodinamico"></div>
 				<ul class="nav-links">
 					<li><a href="#hero-content"><i class="fa-solid fa-house"></i> INICIO</a></li>
+					<li class="dropdown">
+						<a href="#"><i class="fas fa-info-circle"></i> MÁS INFORMACIÓN <i class="fa-solid fa-caret-down"></i></a>
+						<ul class="dropdown-content">
+						  <li><a href="../blogindex.html">Blog</a></li>
+						  <li><a href="#">Guías y tutoriales</a></li>
+						  <li><a href="#">Preguntas frecuentes</a></li>
+						  <li><a href="#">Casos de éxito</a></li>
+						  <li><a href="#">Cobertura</a></li>
+						  <li><a href="#">Legal y privacidad</a></li>
+						</ul>
+					  </li>
 					<li><a href="#footer"><i class="fa-solid fa-phone"></i> CONTÁCTANOS</a></li>
 					<li><a href="#plans"><i class="fa-solid fa-paper-plane"></i> PLANES</a></li>
 					<li><a href="#carouselproducts"><i class="fa-solid fa-mobile"></i> PRODUCTOS</a></li>
