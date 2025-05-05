@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let articles = [];
 
   async function fetchArticles() {
-    const res = await fetch("articles_final.json");
+    const res = await fetch("json/articles_final.json");
     articles = await res.json();
     renderArticles("todo");
   }
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="article-category">${featured.category}</div>
         <div class="article-title">${featured.title}</div>
         <p>${featured.summary}</p>
-        <a href="articulo.html?id=${featured.id}" class="read-more">Leer más</a>
+        <a href="html/articulo.html?id=${featured.id}" class="read-more">Leer más</a>
       </div>
     `;
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="article-category">${article.category}</div>
             <div class="article-title">${article.title}</div>
             <p>${article.summary}</p>
-            <a href="articulo.html?id=${article.id}" class="read-more">Leer más</a>
+            <a href="../html/articulo.html?id=${article.id}" class="read-more">Leer más</a>
           </div>
         </div>
       `;

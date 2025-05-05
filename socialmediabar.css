@@ -1,0 +1,89 @@
+/* Estilo general */
+.social-bar {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+  
+.social-bar .toggle-tab {
+    display: none;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+.social-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Se muestra al hacer toggle */
+.social-bar ul.show {
+    display: flex !important;
+    flex-direction: column;
+    padding: 10px 0;
+}
+  
+.social-bar ul li {
+    margin: 8px 0;
+}
+  
+.social-bar ul li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(0deg, #ddd, #fff);
+    color: #262626;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos de hover por red social */
+.social-bar ul li:nth-child(1) a:hover { color: #3b5998; }     /* Facebook */
+.social-bar ul li:nth-child(2) a:hover { color: #00aced; }     /* Twitter */
+.social-bar ul li:nth-child(3) a:hover { color: #dd4b39; }     /* TikTok */
+.social-bar ul li:nth-child(4) a:hover { color: #fa441f; }     /* YouTube */
+.social-bar ul li:nth-child(5) a:hover { color: #e4405f; }     /* Instagram */
+
+@media (max-width: 768px) {
+    .social-bar {
+        top: unset;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        background: transparent;
+    }
+
+    .social-bar .toggle-tab {
+        display: block;
+        text-align: center;
+    }
+
+    .social-bar ul {
+        display: none;
+        flex-direction: row;
+        background: #fff;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        justify-content: center;
+    }
+
+    .social-bar ul.show {
+        display: flex;
+    }
+
+    .social-bar ul li {
+        margin: 0 5px;
+    }
+}

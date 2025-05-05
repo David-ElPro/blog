@@ -2,7 +2,7 @@ async function loadArticle() {
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get("id"), 10);
 
-  const response = await fetch("articles_final.json");
+  const response = await fetch("../json/articles_final.json");
   const articles = await response.json();
   const article = articles.find((a) => a.id === id);
 

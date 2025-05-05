@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Artículo | Linntae Blog</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="articlescss.css" />
+  <link rel="stylesheet" href="../stylescss/articlescss.css" />
+  <link rel="stylesheet" href="../stylescss/orginalstyles.css">
+  <link rel="stylesheet" href="../stylescss/cssblog.css">
   <script src="scriptgeneral.js"></script>
-  <link rel="stylesheet" href="orginalstyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,13 +27,34 @@
 <div class="adsense-container" style="background:#e5e5e5; padding:20px; text-align:center;">
   <p style="margin:0; font-size:14px;">[Espacio reservado para anuncio]</p>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownToggle = document.querySelector(".dropdown > a");
+    const dropdownContent = document.querySelector(".dropdown-content");
 
-  <header class="blog-header">
+    dropdownToggle.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevenir navegación
+      dropdownContent.classList.toggle("show");
+    });
+  });
+</script>
+
     
     <nav>
       <div class="logo"><img id="logoimagen" src= "" alt="logodinamico"></div>
       <ul class="nav-links">
           <li><a href="#hero-content"><i class="fa-solid fa-house"></i>   INICIO</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> MÁS INFORMACIÓN <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="../blogindex.html">Blog</a></li>
+              <li><a href="#">Guías y tutoriales</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Casos de éxito</a></li>
+              <li><a href="#">Cobertura</a></li>
+              <li><a href="#">Legal y privacidad</a></li>
+            </ul>
+          </li>
           <li><a href="#footer"><i class="fa-solid fa-phone"></i>   CONTÁCTANOS</a></li>
           <li><a href="#plans"><i class="fa-solid fa-paper-plane"></i>   PLANES</a></li>
           <li><a href="#carouselproducts"><i class="fa-solid fa-mobile"></i>   PRODUCTOS</a></li>
@@ -42,7 +64,6 @@
       </ul>
       <div class="menu-toggle">&#9776;</div>
   </nav>
-  </header>
   
 
   <main class="article-main">
@@ -81,7 +102,7 @@
       </div>
     </section>
   </main>
-  <a class="btnreverse" href="blogindex.html">
+  <a class="btnreverse" href="../blogindex.html">
     Home <i class="fa-solid fa-blog"></i>
   </a>
 
@@ -89,7 +110,7 @@
     <p>© 2024 Linntae - Todos los derechos reservados.</p>
   </footer>
 
-  <script src="js/articulo.js"></script>
+  <script src="../js/articulo.js"></script>
 </body>
 </html>
 

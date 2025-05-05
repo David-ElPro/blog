@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" id="favicon" href="https://storage.googleapis.com/linn-files/LinntaeWebPage/favicon/linntaebluelogoicon.png">
+		<title>Aviso de Privacidad</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 40px;
+				line-height: 1.6;
+				color: #333;
+			}
+			
+			h1, h2 {
+				color: #004080;
+			}
+			
+			a {
+				color: #0066cc;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Aviso de Privacidad</h1>
+		
+		<p><strong>Líderes en innovación S.A. de C.V.</strong>, en su carácter de responsable del tratamiento de sus
+															  datos personales, con domicilio en México, pone a su
+															  disposición el presente Aviso de Privacidad en
+															  cumplimiento de lo dispuesto por la Ley Federal de
+															  Protección de Datos Personales en Posesión de los
+															  Particulares.</p>
+		
+		<h2>1. Identidad del responsable</h2>
+		<p>Este Aviso de Privacidad aplica para la aplicación móvil <strong id="nombreMarca"></strong>, desarrollada y
+		   operada por <strong>Líderes en innovación S.A. de C.V.</strong></p>
+		
+		<h2>2. Finalidades del tratamiento de datos</h2>
+		<p>Los datos personales que recabamos se utilizarán para las siguientes finalidades:</p>
+		<ul>
+			<li>Brindar acceso a los servicios ofrecidos dentro de la aplicación.</li>
+			<li>Verificar y confirmar la identidad del usuario.</li>
+			<li>Procesar pagos y recargas electrónicas.</li>
+			<li>Ofrecer soporte técnico y atención al cliente.</li>
+			<li>Informar sobre cambios, actualizaciones y mejoras en el servicio.</li>
+		</ul>
+		
+		<h2>3. Datos personales recabados</h2>
+		<p>Los datos que se podrán recabar incluyen:</p>
+		<ul>
+			<li>Nombre completo</li>
+			<li>Teléfono</li>
+			<li>Correo electrónico</li>
+			<li>Ubicación (opcional)</li>
+			<li>RFC (opcional)</li>
+			<li>Datos de pago o transacciones</li>
+		</ul>
+		
+		<h2>4. Transferencia de datos</h2>
+		<p>No compartimos datos personales con terceros sin su consentimiento, salvo en los casos permitidos por la
+		   ley.</p>
+		
+		<h2>5. Derechos ARCO</h2>
+		<p>Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse (ARCO) al tratamiento de sus datos personales.
+		   Para ejercer estos derechos puede enviar un correo a: <a href="#" id="correo"></a>
+		</p>
+		
+		<h2>6. Cambios al aviso de privacidad</h2>
+		<p>Este Aviso de Privacidad puede sufrir modificaciones. Cualquier cambio será publicado en el sitio web
+		   oficial: <a href="#" target="_blank" id="dominioPortal"></a></p>
+		
+		<h2>7. Legislación aplicable</h2>
+		<p>Este Aviso se rige por la legislación mexicana. Cualquier controversia será resuelta ante los tribunales
+		   competentes del estado de Morelos.</p>
+		
+		
+		<script>
+			let dominioPortal = window.location.hostname;
+			document.getElementById("dominioPortal").textContent = dominioPortal;
+			document.getElementById("dominioPortal").href = "https://" + dominioPortal;
+			
+			let marca = dominioPortal.toLowerCase();
+			
+			let marcaTitle = "Recargas y Servicios";
+			let iconPath = 'favicon.png';
+			let correo = 'contacto@linntae.com';
+			
+			if (marca.indexOf("linntae") !== -1) {
+				iconPath = 'icons/linntae/favicon.png';
+				marcaTitle = "Linntae";
+			} else if (marca.indexOf("prepagotae") !== -1) {
+				iconPath = 'icons/prepagotae/favicon.png';
+				marcaTitle = "PrepagoTae";
+				correo = "saldotae@gmail.com";
+			} else if (marca.indexOf("datcel") !== -1) {
+				iconPath = 'icons/datcel/favicon.png';
+				marcaTitle = "Datcel";
+				correo = "admin@datcel.com";
+			} else if (marca.indexOf("demo") !== -1) {
+				iconPath = 'icons/demo/favicon.png';
+				marcaTitle = "Demo";
+			} else if (marca.indexOf("movilconecta") !== -1) {
+				iconPath = 'icons/movilconecta/favicon.png';
+				marcaTitle = "Movil Conecta";
+				correo = "ventas@movilconecta.com";
+			} else if (marca.indexOf("recargasmovil") !== -1) {
+				iconPath = 'icons/recargasmovil/favicon.png';
+				marcaTitle = "Recargas Movil";
+				correo = "contacto@recargasmovil.com'";
+			} else if (marca.indexOf("recargasinteligentes") !== -1) {
+				iconPath = 'icons/recargasinteligentes/favicon.png';
+				marcaTitle = "Recargas Inteligentes";
+				correo = "recargasInteligentes@live.com";
+			} else if (marca.indexOf("ramcel") !== -1) {
+				iconPath = 'icons/ramcel/favicon.png';
+				marcaTitle = "RamcelTae";
+				correo = "contacto@ramceltae.com";
+			} else if (marca.indexOf("virtualceltae") !== -1) {
+				iconPath = 'icons/virtualcel/favicon.png';
+				marcaTitle = "VirtualcelTae";
+				correo = "contacto@virtualceltae.com";
+			} else if (marca.indexOf("recargasmx") !== -1) {
+				iconPath = 'icons/recargadetae/favicon.png';
+				marcaTitle = "Recargas de Tae";
+				correo = "recargasdetae@gmail.com";
+			} else if (marca.indexOf("recargasgmb") !== -1) {
+				iconPath = 'icons/gmb/favicon.png';
+				marcaTitle = "Recargas GMB";
+				correo = "ventas@recargasgmb.com";
+			} else if (marca.indexOf("iconic") !== -1) {
+				iconPath = 'icons/iconic/favicon.png';
+				marcaTitle = "Iconic";
+				correo = "ventas@iconicm.com.mx";
+			} else if (marca.indexOf("okrecargas") !== -1) {
+				marcaTitle = "OkRecargas";
+				correo = "contacto@okgo.mx";
+			}
+			
+			document.getElementById("nombreMarca").textContent = marcaTitle;
+			document.getElementById('favicon').href = iconPath;
+			document.getElementById('correo').textContent = correo;
+			document.getElementById('correo').href = "mailto:" + correo;
+		</script>
+	</body>
+</html>
